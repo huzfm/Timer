@@ -76,12 +76,39 @@ const Timer = () => {
                               ) : (
                                     <>
                                           <p className="text-white text-2xl sm:text-3xl lg:text-6xl font-thin font-mono">
-                                                Time Left for the End of <button className="bg-emerald-950 rounded-xl p-4 text-white">2024</button>
+                                                Time Left for the End of <button className="bg-emerald-950 rounded-xl p-[10px] mt-5 text-white">2024</button>
                                           </p>
 
-                                          <h1 className="text-slate-100 text-5xl sm:text-8xl lg:text-9xl font-thin font-mono">
-                                                {time.days}:{time.hours}:{time.minutes}:{time.seconds}
-                                          </h1>
+                                          <div className="text-center">
+                                                <div className="flex justify-center space-x-4">
+                                                      {/* Numbers and Labels */}
+                                                      <div className="flex flex-col items-center">
+                                                            <span className="text-white text-4xl sm: ext-8xl lg:text-9xl font-thin font-mono">
+                                                                  {time.days}:
+                                                            </span>
+                                                            <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">D</span>
+                                                      </div>
+                                                      <div className="flex flex-col items-center">
+                                                            <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
+                                                                  {time.hours}:
+                                                            </span>
+                                                            <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">H</span>
+                                                      </div>
+                                                      <div className="flex flex-col items-center">
+                                                            <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
+                                                                  {time.minutes}:
+                                                            </span>
+                                                            <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">M</span>
+                                                      </div>
+                                                      <div className="flex flex-col items-center">
+                                                            <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
+                                                                  {time.seconds}
+                                                            </span>
+                                                            <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">S</span>
+                                                      </div>
+                                                </div>
+                                          </div>
+
 
                                           <section className="bg-white p-3 rounded-lg border-black mt-4">
                                                 <p>Time Zone: {selectedTimeZone}</p>
