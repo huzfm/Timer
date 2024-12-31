@@ -88,12 +88,7 @@ const Timer = () => {
                                                             </span>
                                                             <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">D</span>
                                                       </div>
-                                                      <div className="flex flex-col items-center">
-                                                            <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
-                                                                  {time.hours}:
-                                                            </span>
-                                                            <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">H</span>
-                                                      </div>
+
                                                       <div className="flex flex-col items-center">
                                                             <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
                                                                   {time.hours}:
