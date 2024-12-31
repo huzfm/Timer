@@ -83,10 +83,16 @@ const Timer = () => {
                                                 <div className="flex justify-center space-x-4">
                                                       {/* Numbers and Labels */}
                                                       <div className="flex flex-col items-center">
-                                                            <span className="text-white text-4xl sm: ext-8xl lg:text-9xl font-thin font-mono">
+                                                            <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
                                                                   {time.days}:
                                                             </span>
                                                             <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">D</span>
+                                                      </div>
+                                                      <div className="flex flex-col items-center">
+                                                            <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
+                                                                  {time.hours}:
+                                                            </span>
+                                                            <span className="text-slate-300 text-xs sm:text-xs lg:text-xl font-light font-mono">H</span>
                                                       </div>
                                                       <div className="flex flex-col items-center">
                                                             <span className="text-white text-4xl sm:text-8xl lg:text-9xl font-thin font-mono">
